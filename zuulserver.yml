@@ -36,3 +36,5 @@ eureka:
       defaultZone: http://qa-scl008-021:8761/eureka/
   instance:
     non-secure-port-enabled: true
+
+env: dev
