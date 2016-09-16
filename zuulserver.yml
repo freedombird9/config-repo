@@ -33,4 +33,4 @@ eureka:
   instance:
     non-secure-port-enabled: true
 
-env: dev
+env: pmdemo
