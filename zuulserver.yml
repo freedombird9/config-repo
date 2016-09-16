@@ -27,7 +27,7 @@ zuul:
     #  url: http://qa-scl008-007:8082/ui/login/
     ss:
       path: /securityservice/**
-      serviceId: ${env}.automationruleservice
+      serviceId: ${env}.securityservice
       stripPrefix: false
 
 eureka:
@@ -36,5 +36,3 @@ eureka:
       defaultZone: http://qa-scl008-021:8761/eureka/
   instance:
     non-secure-port-enabled: true
-
-env: dev 
