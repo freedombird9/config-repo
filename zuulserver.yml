@@ -25,10 +25,10 @@ zuul:
     #root:
     #  path: /
     #  url: http://qa-scl008-007:8082/ui/login/
-    #ss:
-    #  path: /securityservice/**
-    #  serviceId: ${env}.securityservice
-    #  stripPrefix: false
+    ss:
+      path: /securityservice/**
+      serviceId: ${env}.securityservice
+      stripPrefix: false
 
 eureka:
   client:
