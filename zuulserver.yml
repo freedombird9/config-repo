@@ -1,0 +1,34 @@
+zuul:
+  ignoredServices: '*'
+  routes:
+    smp:
+      path: /smp/**
+      serviceId: ${env}.smp
+      stripPrefix: false
+    automationrulegateway:
+      path: /automationrulegateway/**
+      serviceId: ${env}.automationrulegateway
+      stripPrefix: false
+    logingateway:
+      path: /login/**
+      sensitiveHeaders:
+      serviceId: ${env}.logingateway
+      #url: http://qa-scl008-021:8094/login/
+      #url: http://localhost:8085/login/
+      stripPrefix: false
+    ui:
+      path: /ui/**
+    # serviceId: http://localhost:8082/ui/
+      #url: http://localhost:8082/ui/
+      url: http://qa-scl008-007:8082/ui/
+      #stripPrefix: false
+    root:
+      path: /
+      url: http://qa-scl008-007:8082/ui/login/
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://qa-scl008-021:8761/eureka/
+  instance:
+    non-secure-port-enabled: true
