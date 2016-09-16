@@ -27,7 +27,7 @@ zuul:
     #  url: http://qa-scl008-007:8082/ui/login/
     ss:
       path: /securityservice/**
-      serviceId: ${env}.securityservice
+      serviceId: ${env}.automationruleservice
       stripPrefix: false
 
 eureka:
