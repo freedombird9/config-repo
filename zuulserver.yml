@@ -22,9 +22,9 @@ zuul:
       #url: http://localhost:8082/ui/
       url: http://qa-scl008-007:8082/ui/
       #stripPrefix: false
-    root:
-      path: /
-      url: http://qa-scl008-007:8082/ui/login/
+    #root:
+    #  path: /
+    #  url: http://qa-scl008-007:8082/ui/login/
 
 eureka:
   client:
